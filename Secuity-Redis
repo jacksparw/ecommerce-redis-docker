@@ -1,6 +1,6 @@
 # Run below command to setup redis via docker 
 
-$docker run -d --name ecommerce-redis -p 6379:6379 redis
+$docker run -d --name ecommerce-security-redis -p 6379:6379 redis
 2d2f559c60d02b779113670024115fe3f9c4bcabfa1661269ce3c1ffd61fac52
 
 
@@ -21,7 +21,7 @@ $docker container logs 2d
 
 # Run Redis CLI and test redis server
 
-$docker exec -it ecommerce-redis redis-cli
+$docker exec -it ecommerce-security-redis redis-cli
 127.0.0.1:6379> set greeting hello
 OK
 127.0.0.1:6379> get greeting
